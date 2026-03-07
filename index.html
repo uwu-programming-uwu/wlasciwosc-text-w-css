@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Text</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="page">
+            <header>
+                <h1 id="header-h1">~ Tekst w CSS ~</h1>
+                <hr>
+            </header>
+            <main>
+                <section>
+                    <h2>1. Text-align</h2>
+                    <p>Właściwość CSS text-align ustawia poziome wyrównanie zawartości na poziomie wiersza wewnątrz elementu blokowego lub pola komórki tabeli. Oznacza to, że działa jak właściwość vertical-align, ale w kierunku poziomym.</p>
+                    <ul>
+                        <li id="l1-1" title="Zawartość wiersza jest wyśrodkowana w polu wiersza."><span>text-align: center;</span></li>
+                        <li id="l1-2" title="Tak samo jak prawo, jeśli kierunek jest od lewej do prawej i lewo, jeśli kierunek jest od prawej do lewej."><span>text-align: end;</span></li>
+                        <li id="l1-3" title="Zawartość w tekście jest wyjustowana. Rozmieszcza treść tak, aby jej lewa i prawa krawędź były wyrównane z lewą i prawą krawędzią pola wiersza, z wyjątkiem ostatniego wiersza."><span>text-align: justify;</span></li>
+                        <li id="l1-4" title="Zawartość wiersza jest wyrównana do lewej krawędzi pola wiersza."><span>text-align: left;</span></li>
+                        <li id="l1-5" title="Zawartość wbudowana jest wyrównana do prawej krawędzi pola wiersza."><span>text-align: right;</span></li>
+                        <li id="l1-6" title="Tak samo jak lewa, jeśli kierunek jest od lewej do prawej i prawa, jeśli kierunek jest od prawej do lewej."><span>text-align: start;</span></li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>2. Text-decoration</h2>
+                    <p>Skrócona właściwość CSS text-decoration ustawia wygląd linii dekoracyjnych w tekście. Jest to skrót od właściwości text-decoration-line, text-decoration-color, text-decoration-style i nowszej text-decoration-thickness.</p>
+                    <ul>
+                        <li id="l2-1">text-decoration: dashed underline;</li>
+                        <li id="l2-2">text-decoration: dotted underline;</li>
+                        <li id="l2-3">text-decoration: double underline;</li>
+                        <li id="l2-4">text-decoration: line-through;</li>
+                        <li id="l2-5">text-decoration: none;</li>
+                        <li id="l2-6">text-decoration: overline;</li>
+                        <li id="l2-7">text-decoration: solid underline;</li>
+                        <li id="l2-8">text-decoration: underline;</li>
+                        <li id="l2-9">text-decoration: wavy underline;</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>3. Text-transform</h2>
+                    <p>Właściwość CSS text-transform określa sposób kapitalizacji tekstu elementu. Można jej użyć, aby tekst był pisany wyłącznie wielkimi lub małymi literami, albo z każdym słowem pisanym wielką literą. Może również poprawić czytelność w Ruby.</p>
+                    <ul>
+                        <li id="l3-1" title="Słowo kluczowe, które zamienia pierwszą literę każdego słowa na wielką. Pozostałe znaki pozostają niezmienione (zachowują oryginalną wielkość liter, taką jak w tekście elementu). Litera jest definiowana jako znak należący do ogólnych kategorii liter i cyfr Unicode; zatem wszelkie znaki interpunkcyjne lub symbole na początku słowa są ignorowane."><span>text-transform: capitalize;</span></li>
+                        <li id="l3-2" title="Jest to słowo kluczowe, które zamienia wszystkie znaki na małe litery."><span>text-transform: lowercase;</span></li>
+                        <li id="l3-3" title="Słowo kluczowe, które zapobiega zmianie wielkości liter wszystkich znaków."><span>text-transform: none;</span></li>
+                        <li id="l3-4" title="Jest to słowo kluczowe, które zamienia wszystkie znaki na wielkie litery."><span>text-transform: uppercase;</span></li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>4. Text-overflow</h2>
+                    <p>Właściwość CSS text-overflow określa sposób sygnalizowania użytkownikom ukrytej zawartości przepełnienia. Można ją przyciąć, wyświetlić wielokropek (…) lub wyświetlić niestandardowy ciąg znaków.</p>
+                    <ul>
+                        <li id="l4-1" title="Wartość domyślna dla tej właściwości. Ta wartość słowa kluczowego spowoduje obcięcie tekstu na granicy obszaru zawartości, dlatego obcięcie może nastąpić w środku znaku. Aby przyciąć tekst w przejściu między znakami, możesz określić parametr text-overflow jako pusty ciąg znaków, jeśli jest on obsługiwany przez przeglądarki docelowe: text-overflow: '';."><span>text-overflow: clip;</span></li>
+                        <div id="l4-1-1"><p id="l4-1-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, earum?</p></div>
+                        <li id="l4-2" title="Ta wartość słowa kluczowego wyświetli wielokropek („…”, U+2026 POZIOMA ELIPSA), aby reprezentować przycięty tekst. Wielokropek jest wyświetlany wewnątrz obszaru treści, zmniejszając ilość wyświetlanego tekstu. Jeśli nie ma wystarczająco dużo miejsca na wyświetlenie wielokropka, jest on przycinany."><span>text-overflow: ellipsis;</span></li>
+                        <div id="l4-2-1"><p id="l4-2-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, minus.</p></div>
+                    </ul>
+                </section>
+                <section>
+                    <h2>5. Text-shadow</h2>
+                    <p>Właściwość CSS text-shadow dodaje cienie do tekstu. Akceptuje ona rozdzieloną przecinkami listę cieni, które mają zostać zastosowane do tekstu i jego dowolnej dekoracji tekstowej. Każdy cień jest opisany kombinacją przesunięć X i Y od elementu, promienia rozmycia i koloru.</p>
+                    <ul>
+                        <li id="l5-1">text-shadow: none;</li>
+                        <li id="l5-2">text-shadow: 0 2px 2px #80808080;</li>
+                        <li id="l5-3">text-shadow: 5px 5px 5px #808080;</li>
+                    </ul>
+                </section>
+            </main>
+            <footer>
+                <hr>
+                <p>&copy; <a href="https://github.com/uwu-programming-uwu" target="_blank">uwu-programming-uwu</a> 2026</p>
+            </footer>
+        </div>
+    </body>
+</html>
