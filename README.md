@@ -1,1 +1,2 @@
-**Szkolny projekt numer 1, właściwość *text* w CSS.**
+# Szkolny projekt
+**Właściwość *text* w CSS**
